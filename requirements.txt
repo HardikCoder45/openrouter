@@ -1,0 +1,9 @@
+duckduckgo_search
+asyncio
+aiohttp
+streamlit
+openai
+tenacity
+python-dateutil
+tiktoken
+nest_asyncio 

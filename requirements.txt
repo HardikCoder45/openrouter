@@ -7,3 +7,4 @@ tenacity
 python-dateutil
 tiktoken
 nest_asyncio 
+load_dotenv

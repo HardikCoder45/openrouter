@@ -82,8 +82,8 @@ if 'settings' not in st.session_state:
         'notifications': True,
         'compact_view': False,
         'system_prompt': "You are an expert code generator. Generate clean, well-documented code with detailed explanations.",
-        'search_enabled': True,
-        'show_search_results': True,
+        'search_enabled': False,
+        'show_search_results': False,
         'search_results_count': 3,
         'context_window': 10
     }
@@ -212,11 +212,11 @@ with st.sidebar:
     # Generation Settings
     st.markdown("### 🎯 Generation Settings")
     st.session_state.settings['temperature'] = st.slider(
-        "Temperature", 0.0, 1.0, 
+        "Temperature", 0.0, 2.0, 
         st.session_state.settings['temperature']
     )
     st.session_state.settings['max_tokens'] = st.number_input(
-        "Max Tokens", 100, 4000, 
+        "Max Tokens", 100, 128000, 
         st.session_state.settings['max_tokens']
     )
     
